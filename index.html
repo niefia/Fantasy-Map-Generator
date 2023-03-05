@@ -1959,6 +1959,8 @@
             <button id="editProvincesButton" data-tip="Click to open Provinces Editor" data-shortcut="Shift + P">
               Provinces
             </button>
+			<button id="editCharactersButton" data-tip="Click to open Characters Editor" data-shortcut="Shift + P">
+              Characters
             <button
               id="editDiplomacyButton"
               data-tip="Click to open Diplomatical relationships Editor"
@@ -5270,6 +5272,31 @@
           ></button>
         </div>
       </div>
+	  
+	  <div id="charactersOverview">
+        <script src="chargenerator.js"></script>
+        <h2>Character Generator</h2>
+        <div id="character"></div>
+        <button onclick="generateCK3Ruler()">Generate Character</button>
+        <br>
+        <br>
+        <p><label>Name: </label><span id="NameOutput"></span></p>
+        <p><label>Nickname: </label><span id="NicknameOutput"></span></p>
+        <p><label>Dynasty: </label><span id="dynastyOutput"></span></p>
+        <p><label>Age: </label><span id="AgeOutput"></span></p>
+        <p><label>Gender: </label><span id="GenderOutput"></span></p>
+        <p><label>Sexuality: </label><span id="SexualityOutput"></span></p>
+        <p><label>Culture: </label><span id="CultureOutput"></span></p>
+        <p><label>Religion: </label><span id="ReligionOutput"></span></p>
+        <p><label>Title: </label><span id="titleOutput"></span></p>
+        <p><label>Rank: </label><span id="rankOutput"></span></p>
+        <p><label>Birth Date: </label><span id="birthDateOutput"></span></p>
+      </div>
+	  
+	  
+	  
+	  
+	  
 
       <div id="riversOverview" class="dialog stable" style="display: none">
         <div id="riversHeader" class="header" style="grid-template-columns: 9em 4em 6em 6em 5em 9em">
@@ -7891,6 +7918,7 @@
     <script defer src="modules/ui/world-configurator.js"></script>
     <script defer src="modules/ui/heightmap-editor.js?v=1.89.06"></script>
     <script defer src="modules/ui/provinces-editor.js?v=1.89.00"></script>
+	<script defer src="modules/ui/characters-editor.js"></script>
     <script defer src="modules/ui/biomes-editor.js"></script>
     <script defer src="modules/ui/namesbase-editor.js?v=1.87.10"></script>
     <script defer src="modules/ui/elevation-profile.js"></script>
